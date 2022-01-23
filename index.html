@@ -41,7 +41,7 @@
     <main>
         <section class="hero section">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-bt">Заказать услугу</button>
+            <button data-modal-open type="button" class="hero-bt">Заказать услугу</button>
         </section>
         <section class="features section">
             <div class="container">
@@ -89,9 +89,18 @@
             <div class="container">
                 <h2 class="primary-title">Чем мы занимаемся</h2>
                 <ul class="about-box">
-                    <li class="about-item"><img src="./images/img-1.jpg" alt="работа за компьютером" width="370" height="294" class="about-pict"></li>
-                    <li class="about-item"><img src="./images/img-2.jpg" alt="работа с телефоном" width="370" height="294" class="about-pict"></li>
-                    <li class="about-item"><img src="./images/img-3.jpg" alt="работа за планшетом" width="370" height="294" class="about-pict"></li>
+                    <li class="about-item">
+                        <img src="./images/img-1.jpg" alt="работа за компьютером" width="370" height="294" class="about-pict">
+                        <p class="about-descr">Десктопные приложения</p>
+                    </li>
+                    <li class="about-item">
+                        <img src="./images/img-2.jpg" alt="работа с телефоном" width="370" height="294" class="about-pict">
+                        <p class="about-descr">Мобильные приложения</p>
+                    </li>
+                    <li class="about-item">
+                        <img src="./images/img-3.jpg" alt="работа за планшетом" width="370" height="294" class="about-pict">
+                        <p class="about-descr">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -347,6 +356,19 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="modal-button">
+                <svg class="modal-button-close">
+                    <use href="./images/icons.svg#icon-modal-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
     
