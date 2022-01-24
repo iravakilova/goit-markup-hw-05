@@ -85,13 +85,13 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--color-text-primary);
+  transition-property: color;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
-  transition-property: color;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 .current {
   color: var(--accent-color);
@@ -119,6 +119,9 @@ img {
   align-items: center;
   color: var(--color-text-secondary);
   fill: var(--color-text-secondary);
+  transition-property: color, fill;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .contact-icon {
   margin-right: 10px;
@@ -127,9 +130,6 @@ img {
 .header-connect-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-  transition-property: color, fill;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 .hero {
   background: #c4c4c4;
@@ -175,13 +175,13 @@ img {
   min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .hero-bt:hover,
 .hero-bt:focus {
   background-color: #188ce8;
-  transition-property: background-color;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 .features {
   padding-bottom: 0;
@@ -314,6 +314,9 @@ img {
   justify-content: center;
   align-items: center;
   fill: var(--color-icon);
+  transition-property: background-color, border-radius, fill;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .social-sign {
   width: 20px;
@@ -323,9 +326,6 @@ img {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
-  transition-property: background-color, border-radius, fill;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 
 /* clients */
@@ -352,6 +352,9 @@ img {
   justify-content: center;
   align-items: center;
   fill: var(--color-icon);
+  transition-property: border, fill;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .clients-icon {
   width: 106px;
@@ -361,12 +364,10 @@ img {
 .clients-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
-  transition-property: border, fill;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 
 /* portfolio */
+
 .portfolio {
   border-top: 1px solid #ececec;
 }
@@ -392,6 +393,9 @@ img {
   border: transparent;
   padding: 6px 22px;
   border-radius: 4px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .portfolio-bt:hover,
 .portfolio-bt:focus {
@@ -399,9 +403,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 .portfolio-gallery {
   display: flex;
@@ -413,6 +414,9 @@ img {
   flex-wrap: wrap;
   margin-bottom: 30px;
   overflow: hidden;
+  transition-property: box-shadow;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .portfolio-item:not(:last-child) {
   margin-right: 30px;
@@ -424,9 +428,6 @@ img {
 .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-property: box-shadow;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 .portfolio-descr {
   padding: 20px 24px;
@@ -553,6 +554,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration-primary);
+  transition-timing-function: var(--transition-timing-function-primary);
 }
 .footer-social-sign {
   width: 20px;
@@ -562,9 +566,6 @@ footer {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  transition-property: background-color;
-  transition-duration: var(--transition-duration-primary);
-  transition-timing-function: var(--transition-timing-function-primary);
 }
 .backdrop {
   position: fixed;
